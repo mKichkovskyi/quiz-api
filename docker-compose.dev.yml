@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:14
+    container_name: quiz_postgres
+    environment:
+      POSTGRES_USER: ${DB_USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-yourpassword}
+      POSTGRES_DB: ${DB_DATABASE:-quiz_db}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - quiz_network
+
+  test_db:
+    image: postgres:14
+    container_name: quiz_postgres_test
+    environment:
+      POSTGRES_USER: ${TEST_DB_USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${TEST_DB_PASSWORD:-yourpassword}
+      POSTGRES_DB: ${TEST_DB_DATABASE:-quiz_test_db}
+    ports:
+      - "${TEST_DB_PORT:-5433}:5432"
+    networks:
+      - quiz_network
+
+volumes:
+  postgres_data:
+
+networks:
+  quiz_network:
+    driver: bridge

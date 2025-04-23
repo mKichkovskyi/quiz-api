@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Has your child studied English before?",
+    "options": [
+      {
+        "content": "Already started studying",
+        "src": "eyes-hearts.svg"
+      },
+      {
+        "content": "Never studied",
+        "src": "sad.svg"
+      }
+    ],
+    "questionType": "single-choice"
+  },
+  {
+    "title": "What goals do you see for your child?",
+    "options": [
+      {
+        "content": "Speak fluently",
+        "src": "smirking.svg"
+      },
+      {
+        "content": "Improve grades in school",
+        "src": "teacher.svg"
+      },
+      {
+        "content": "Learn grammar",
+        "src": "nerd.svg"
+      },
+      {
+        "content": "Comprehensive study",
+        "src": "jiggling.svg"
+      }
+    ],
+    "questionType": "single-choice"
+  },
+  {
+    "title": "How fast do you want to progress?",
+    "subTitle": "Some parents prefer a high pace of learning, others — a smooth learning of English",
+    "options": [
+      {
+        "content": "The sooner the better",
+        "src": "rocket.svg"
+      },
+      {
+        "content": "Gradual learning",
+        "src": "snail.svg"
+      }
+    ],
+    "questionType": "single-choice"
+  },
+  {
+    "title": "Do you want to track your child's progress?",
+    "subTitle": "We prepared a functionality that allows you to see how was the lesson and your child's results",
+    "options": [
+      {
+        "content": "Yes",
+        "src": "yes.svg"
+      },
+      {
+        "content": "No",
+        "src": "no.svg"
+      }
+    ],
+    "questionType": "single-choice"
+  },
+  {
+    "title": "What is your child interested in?",
+    "subTitle": "This will help us create a personalized program for your child",
+    "options": [
+      {
+        "content": "Minecraft",
+        "src": "minecraft.svg"
+      },
+      {
+        "content": "Roblox",
+        "src": "roblox.svg"
+      },
+      {
+        "content": "Animals",
+        "src": "animals.svg"
+      },
+      {
+        "content": "Traveling",
+        "src": "travel.svg"
+      },
+      {
+        "content": "Disney princesses",
+        "src": "princess.svg"
+      },
+      {
+        "content": "Lego",
+        "src": "lego.svg"
+      },
+      {
+        "content": "Painting",
+        "src": "painting.svg"
+      }
+    ],
+    "questionType": "multiple-choice"
+  }
+]
